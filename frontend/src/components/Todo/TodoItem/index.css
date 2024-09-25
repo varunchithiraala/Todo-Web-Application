@@ -127,7 +127,7 @@
     background: #6c757d;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 350px) {
     .todo-item-buttons {
       flex-direction: column;
     }
