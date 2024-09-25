@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/todos/';
+const API_URL = 'https://todo-web-application-backend.onrender.com/api/todos/';
 
 const createTodo = (todo) => {
   return axios.post(API_URL, todo, {
