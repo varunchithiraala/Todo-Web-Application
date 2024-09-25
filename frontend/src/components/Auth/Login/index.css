@@ -102,10 +102,9 @@
 .signup-link {
     color: #007bff;
     cursor: pointer;
-    text-decoration: underline;
 }
 
-  .signup-link:hover {
+.signup-link:hover {
     color: #0056b3;
-  }
-  
+    text-decoration: underline;
+}
