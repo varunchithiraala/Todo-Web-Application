@@ -33,7 +33,7 @@ const Signup = () => {
   return (
     <div className="signup">
       <div className="signup-container">
-        <h2 className="signup-title">Signup</h2>
+        <h2 className="signup-title">Sign Up</h2>
         <form className="signup-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label className="form-label">Name:</label>
@@ -70,8 +70,8 @@ const Signup = () => {
               </span>
             </div>
           </div>
-          <button type="submit" className="signup-button">Signup</button>
-          {error && <div className="error-message">{error}</div>}
+          <button type="submit" className="signup-button">Sign Up</button>
+          {error && <div className="error-message">*{error}</div>}
         </form>
         <div className="login-prompt">
           <p>Already have an account? <span className="login-link" onClick={handleLoginRedirect}>Login</span></p>
