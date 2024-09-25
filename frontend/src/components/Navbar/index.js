@@ -25,9 +25,9 @@ const Navbar = () => {
       </ul>
       <div className="navbar-auth">
         {token ? (
-          <button className="logout-button" onClick={handleLogout}>Logout</button>
+          <button className="navbar-logout-button" onClick={handleLogout}>Logout</button>
         ) : (
-          <button className="login-button" onClick={handleLoginRedirect}>Log In</button>
+          <button className="navbar-login-button" onClick={handleLoginRedirect}>Log In</button>
         )}
       </div>
     </nav>
