@@ -46,29 +46,29 @@
     align-items: center;
 }
 
-  .logout-button,
-  .login-button {
+.navbar-logout-button,
+.navbar-login-button {
     padding: 6px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.logout-button {
+.navbar-logout-button {
     background-color: #dc3545;
     color: white;
 }
 
-.login-button {
+.navbar-login-button {
     background-color: #007bff;
     color: white;
 }
   
-.logout-button:hover {
+.navbar-logout-button:hover {
     background-color: #c82333;
 }
 
-.login-button:hover {
+.navbar-login-button:hover {
     background-color: #0056b3;
 }
 
