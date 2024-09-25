@@ -107,3 +107,9 @@
     color: #0056b3;
     text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+    .signup-container {
+        width: 90%;
+    }
+}
