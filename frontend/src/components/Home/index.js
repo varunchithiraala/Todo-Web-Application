@@ -10,7 +10,7 @@ const Home = () => {
         Create, edit, and delete tasks to stay organized and productive.
       </p>
       <div className="home-info">
-        <h2>Features:</h2>
+        <h2>Features</h2>
         <ul className="feature-list">
           <li>📝 Create new tasks effortlessly</li>
           <li>✏️ Edit existing tasks anytime</li>
