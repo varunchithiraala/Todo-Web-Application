@@ -34,6 +34,7 @@ const TodoList = () => {
             value={newTodo.title}
             onChange={(e) => setNewTodo({ ...newTodo, title: e.target.value })}
             className="form-input"
+            required
           />
         </div>
         <div>
@@ -43,6 +44,7 @@ const TodoList = () => {
             value={newTodo.description}
             onChange={(e) => setNewTodo({ ...newTodo, description: e.target.value })}
             className="form-input"
+            required
           />
         </div>
         <div>
