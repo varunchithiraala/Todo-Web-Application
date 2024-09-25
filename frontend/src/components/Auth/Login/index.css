@@ -4,12 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .login-container {
+}
+
+.login-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -17,59 +18,59 @@
     width: 50%;
     max-width: 400px;
     margin: auto;
-  }
-  
-  .login-title {
+}
+
+.login-title {
     margin-bottom: 20px;
     color: #333;
     font-size: 24px;
     text-align: center;
-  }
-  
-  .login-form {
+}
+
+.login-form {
     width: 100%;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  .form-label {
+}
+
+.form-label {
     margin-bottom: 5px;
     display: block;
     color: #555;
-  }
-  
-  .form-input {
+}
+
+.form-input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-  }
-  
-  .form-input:focus {
+}
+
+.form-input:focus {
     border-color: #007bff;
     outline: none;
-  }
-  
-  .password-input-container {
+}
+
+.password-input-container {
     display: flex;
     align-items: center;
     position: relative;
-  }
-  
-  .password-input {
+}
+
+.password-input {
     flex: 1;
-  }
-  
-  .password-toggle-icon {
+}
+
+.password-toggle-icon {
     position: absolute;
     right: 10px;
     cursor: pointer;
-  }
-  
-  .login-button {
+}
+
+.login-button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -79,31 +80,31 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .login-button:hover {
+}
+
+.login-button:hover {
     background-color: #0056b3;
-  }
-  
-  .error-message {
+}
+
+.error-message {
     color: #ff0000;
     font-size: 14px;
     margin-top: 6px;
-  }
-  
-  .signup-prompt {
+}
+
+.signup-prompt {
     margin-top: 15px;
     text-align: center;
     font-size: 14px;
     color: #555;
-  }
-  
-  .signup-link {
+}
+
+.signup-link {
     color: #007bff;
     cursor: pointer;
     text-decoration: underline;
-  }
-  
+}
+
   .signup-link:hover {
     color: #0056b3;
   }
