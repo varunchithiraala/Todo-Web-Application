@@ -71,7 +71,7 @@ const Login = () => {
           {error && <div className="error-message">*{error}</div>}
         </form>
         <div className="signup-prompt">
-          <p>Don't have an account? <span className="signup-link" onClick={handleSignupRedirect}>Sign up</span></p>
+          <p>Don't have an account? <span className="signup-link" onClick={handleSignupRedirect}>Sign Up</span></p>
         </div>
       </div>
     </div>
