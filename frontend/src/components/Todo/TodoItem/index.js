@@ -5,6 +5,7 @@ import './index.css';
 const TodoItem = ({ todo, reloadTodos }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [updatedTodo, setUpdatedTodo] = useState({ ...todo });
+  const [errors, setErrors] = useState({ title: false, description: false });
 
   const handleDelete = async () => {
     await todoService.deleteTodo(todo.id);
@@ -12,6 +13,15 @@ const TodoItem = ({ todo, reloadTodos }) => {
   };
 
   const handleUpdate = async () => {
+    const { title, description } = updatedTodo;
+    if (title.trim() === '' || description.trim() === '') {
+      setErrors({
+        title: title.trim() === '',
+        description: description.trim() === ''
+      });
+      return;
+    }
+
     await todoService.updateTodo(todo.id, updatedTodo);
     setIsEditing(false);
     reloadTodos();
@@ -23,18 +33,28 @@ const TodoItem = ({ todo, reloadTodos }) => {
         <div className="todo-item-edit">
           <input
             type="text"
-            className="todo-item-input"
+            className={`todo-item-input ${errors.title ? 'input-error' : ''}`}
             value={updatedTodo.title}
-            onChange={(e) => setUpdatedTodo({ ...updatedTodo, title: e.target.value })}
+            onChange={(e) => {
+              setUpdatedTodo({ ...updatedTodo, title: e.target.value });
+              setErrors({ ...errors, title: false });
+            }}
             placeholder="Title"
+            required
           />
+          {errors.title && <span className="todo-item-error-message">Title is required</span>}
           <input
             type="text"
-            className="todo-item-input"
+            className={`todo-item-input ${errors.description ? 'input-error' : ''}`}
             value={updatedTodo.description}
-            onChange={(e) => setUpdatedTodo({ ...updatedTodo, description: e.target.value })}
+            onChange={(e) => {
+              setUpdatedTodo({ ...updatedTodo, description: e.target.value });
+              setErrors({ ...errors, description: false });
+            }}
             placeholder="Description"
+            required
           />
+          {errors.description && <span className="todo-item-error-message">Description is required</span>}
           <select
             className="todo-item-select"
             value={updatedTodo.status}
