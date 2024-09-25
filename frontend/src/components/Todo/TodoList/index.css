@@ -1,0 +1,127 @@
+.todo-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .todo-list form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-list form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .todo-list form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .todo-list form input[type="text"],
+  .todo-list form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .todo-list form input[type="text"]:focus,
+  .todo-list form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .todo-list form button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .todo-list form button:hover {
+    background: #0056b3;
+  }
+  
+  .todo-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list ul li {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .todo-list ul li:hover {
+    background: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-list .todo-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .todo-list .todo-item-description {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .todo-list .todo-item-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  
+  .todo-list .todo-item-status.pending {
+    background: #ffc107;
+    color: #fff;
+  }
+  
+  .todo-list .todo-item-status.in-progress {
+    background: #17a2b8;
+    color: #fff;
+  }
+  
+  .todo-list .todo-item-status.done {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .todo-list .todo-item-status.completed {
+    background: #6c757d;
+    color: #fff;
+  }
+  
