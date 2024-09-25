@@ -9,7 +9,6 @@ This application is a full-stack Todo management system that allows users to cre
 - [Component Overview](#component-overview)
 - [API Integration](#api-integration)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Frontend
 The frontend is built with React.js. It manages user interactions and displays data from the backend API.
