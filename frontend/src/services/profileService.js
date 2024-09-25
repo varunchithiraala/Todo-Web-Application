@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/profile/';
+const API_URL = 'https://todo-web-application-backend.onrender.com/api/profile/';
 
 const getProfile = async () => {
   return axios.get(API_URL, {
