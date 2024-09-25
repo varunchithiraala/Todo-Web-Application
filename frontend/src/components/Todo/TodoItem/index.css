@@ -8,61 +8,72 @@
     justify-content: space-between;
     align-items: center;
     transition: box-shadow 0.3s;
-  }
-  
-  .todo-item:hover {
+}
+
+.todo-item:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .todo-item-view,
-  .todo-item-edit {
+}
+
+.todo-item-view,
+.todo-item-edit {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  
-  .todo-item-details {
+}
+
+.todo-item-details {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-bottom: 10px;
-  }
-  
-  .todo-item-title-status {
+}
+
+.todo-item-title-status {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .todo-item-title {
+}
+
+.todo-item-title {
     font-weight: bold;
     color: #333;
     font-family: 'Arial', sans-serif;
     flex: 1;
-  }
-  
-  .todo-item-input {
+}
+
+.todo-item-input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
     margin-bottom: 10px;
-  }
+}
+
+.input-error {
+    border: 1px solid #ff0000;
+}
   
-  .todo-item-select {
+.todo-item-error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: -6px;
+    margin-bottom: 6px;
+}  
+  
+.todo-item-select {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 10px;
-  }
+}
   
-  .todo-item-buttons {
+.todo-item-buttons {
     display: flex;
     flex-direction: row;
     gap: 5px;
-  }
+}
   
-  .todo-item-button {
+.todo-item-button {
     padding: 8px 12px;
     border: none;
     border-radius: 4px;
@@ -70,55 +81,55 @@
     cursor: pointer;
     font-size: 14px;
     font-family: 'Arial', sans-serif;
-  }
+}
   
-  .todo-item-save {
+.todo-item-save {
     background: #28a745;
-  }
+}
   
-  .todo-item-cancel {
+.todo-item-cancel {
     background: #dc3545;
-  }
+}
   
-  .todo-item-edit-btn {
+.todo-item-edit-btn {
     background: #007bff;
-  }
+}
   
-  .todo-item-delete-btn {
+.todo-item-delete-btn {
     background: #dc3545;
-  }
+}
   
-  .todo-item-description {
+.todo-item-description {
     color: #666;
     font-family: 'Arial', sans-serif;
-  }
+}
   
-  .todo-item-status {
+.todo-item-status {
     padding: 5px 10px;
     border-radius: 4px;
     color: #fff;
     font-size: 12px;
-  }
-  
-  .todo-item-status.pending {
+}
+
+.todo-item-status.pending {
     background: #ffc107;
-  }
-  
-  .todo-item-status.in-progress {
+}
+
+.todo-item-status.in-progress {
     background: #17a2b8;
-  }
-  
-  .todo-item-status.done {
+}
+
+.todo-item-status.done {
     background: #28a745;
-  }
-  
-  .todo-item-status.completed {
+}
+
+.todo-item-status.completed {
     background: #6c757d;
-  }
-  
-  @media (max-width: 425px) {
+}
+
+@media (max-width: 425px) {
     .todo-item-buttons {
       flex-direction: column;
     }
-  }
+}
   
