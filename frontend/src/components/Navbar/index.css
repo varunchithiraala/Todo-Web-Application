@@ -7,68 +7,73 @@
     color: #ffffff;
     height: 8vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar-title {
+}
+
+.navbar-title {
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  .navbar-links {
+}
+
+.navbar-links {
     list-style: none;
     display: flex;
     gap: 15px;
-  }
-  
-  .navbar-links li {
+}
+
+.navbar-links li {
     transition: transform 0.2s;
-  }
-  
-  .navbar-links li:hover {
+}
+
+.navbar-links li:hover {
     transform: scale(1.1);
-  }
-  
-  .navbar-links a {
+}
+
+.navbar-links a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
-  }
-  
-  .navbar-links a:hover {
+}
+
+.navbar-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-  }
+}
 
 .navbar-auth {
     display: flex;
     align-items: center;
-  }
-  
+}
+
   .logout-button,
   .login-button {
-    padding: 8px 12px;
+    padding: 6px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .logout-button {
+}
+
+.logout-button {
     background-color: #dc3545;
     color: white;
-  }
-  
-  .login-button {
+}
+
+.login-button {
     background-color: #007bff;
     color: white;
-  }
+}
   
-  .logout-button:hover {
+.logout-button:hover {
     background-color: #c82333;
-  }
-  
-  .login-button:hover {
+}
+
+.login-button:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+  .navbar-links {
+    gap: 0px;
   }
-  
+}
