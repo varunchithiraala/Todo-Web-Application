@@ -4,92 +4,106 @@
     align-items: center;
     height: 92vh;
     background-color: #f0f2f5;
-  }
-  
-  .signup-container {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .signup-title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  .signup-form {
+}
+
+.signup-container {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form-group {
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.signup-title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+  .signup-form {
+    width: 100%;
+}
+
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  .form-label {
+}
+
+.form-label {
     margin-bottom: 5px;
     font-weight: bold;
-  }
-  
-  .form-input {
+}
+
+.form-input {
+    font-size: 16px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     width: 100%;
-    box-sizing: border-box;
-  }
+}
 
-  .password-input-container {
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.password-input-container {
     display: flex;
     align-items: center;
     position: relative;
-  }
+}
   
-  .password-input {
+.password-input {
     flex: 1;
-  }
+}
   
-  .password-toggle-icon {
+.password-toggle-icon {
     position: absolute;
     right: 10px;
     cursor: pointer;
-  }
-  
-  .signup-button {
+}
+
+.signup-button {
+    width: 100%;
     padding: 10px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-  }
-  
-  .signup-button:hover {
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
     background-color: #0056b3;
-  }
-  
-  .error-message {
-    margin-top: 10px;
-    color: red;
+}
+
+.error-message {
+    margin-top: 6px;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.login-prompt {
+    margin-top: 15px;
     text-align: center;
-  }
-  
-  .login-prompt {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .login-link {
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link {
     color: #007bff;
     cursor: pointer;
-  }
-  
-  .login-link:hover {
+}
+
+.login-link:hover {
+    color: #0056b3;
     text-decoration: underline;
-  }
-  
+}
